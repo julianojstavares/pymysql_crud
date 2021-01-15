@@ -26,6 +26,7 @@ def read():
             for linha in resultado:
                 print(linha)
 
+# U = Update = SQL Update
 def update():
     with conecta() as conexao:
         with conexao.cursor() as cursor:
@@ -36,6 +37,7 @@ def update():
             cursor.execute(sql)
             conexao.commit()
 
+# D = Delete = SQL Delete
 def delete():
     with conecta() as conexao:
         with conexao.cursor() as cursor:
